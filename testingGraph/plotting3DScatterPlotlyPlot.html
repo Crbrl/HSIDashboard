@@ -18,21 +18,36 @@
                   return rows.map(function(row) 
                   { return row[key]; });
               }
-        var trace1 = {
-          x:unpack(rows, 'wavelet'),  y: unpack(rows, 'plv'), z: unpack(rows, 'ar'), 
+
+        var traceM = {
+          x:unpack(rows, 'waveletM'),  y: unpack(rows, 'plvM'), z: unpack(rows, 'arM'), 
           mode: 'markers',
           marker: {
             size: 12,
             line: {
-              color: 'rgba(217, 217, 217, 0.14)',
-              width: 0.5
+              color: 'rgba(217, 0, 0, 0.14)',
+              width: 0.1
+            },
+            opacity: 0.8
+          },
+          type: 'scatter3d'
+        };
+
+        var traceNC = {
+          x:unpack(rows, 'waveletNC'),  y: unpack(rows, 'plvNC'), z: unpack(rows, 'arNC'), 
+          mode: 'markers',
+          marker: {
+            size: 12,
+            line: {
+              color: 'rgba(0, 217, 0, 0.14)',
+              width: 0.1
             },
             opacity: 0.8
           },
           type: 'scatter3d'
         };
         
-        var data = [trace1];
+        var data = [traceM,traceNC];
         var layout = {
               dragmode: false,
               margin: {
