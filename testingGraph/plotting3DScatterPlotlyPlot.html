@@ -31,6 +31,7 @@
             opacity: 0.8
           },
           type: 'scatter3d'
+          name: 'Migraine with Aura'
         };
 
         var traceNC = {
@@ -45,11 +46,15 @@
             opacity: 0.8
           },
           type: 'scatter3d'
+          name: 'Normal Control'
         };
         
         var data = [traceM,traceNC];
         var layout = {
               dragmode: false,
+              xaxis:{title:'wavelet'},
+              yaxis:{title:'plv'},
+              zaxis:{title:'ar'},
               margin: {
                 l: 0,
                 r: 0,
