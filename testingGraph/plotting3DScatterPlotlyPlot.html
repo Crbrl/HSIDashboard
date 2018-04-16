@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Plotly chart will be drawn inside this DIV -->
+    <div id="myDiv" style="width:480px; height:400px;"></div>
+    <script>
+        // initial data..      http://headachesciences.com/Documentations/data/matlabFeatMatrixReducedNormalized.csv
+        //   https://raw.githubusercontent.com/plotly/datasets/master/3d-scatter.csv
+        // https://drive.google.com/file/d/1V9yksZbbF98fdvSYzfTTBiCld8uMmNM1/view?usp=sharing
+        Plotly.d3.csv('matlabFeatMatrixReducedNormalized.csv', function(err, rows){
+              function unpack(rows, key) {
+                  return rows.map(function(row) 
+                  { return row[key]; });
+              }
+        var trace1 = {
+          x:unpack(rows, 'wavelet'),  y: unpack(rows, 'plv'), z: unpack(rows, 'ar'), 
+          mode: 'markers',
+          marker: {
+            size: 12,
+            line: {
+              color: 'rgba(217, 217, 217, 0.14)',
+              width: 0.5
+            },
+            opacity: 0.8
+          },
+          type: 'scatter3d'
+        };
+        
+        var data = [trace1];
+        var layout = {
+              dragmode: false,
+              margin: {
+                l: 0,
+                r: 0,
+                b: 0,
+                t: 0
+          }};
+          Plotly.newPlot('myDiv', data);
+        });
+        
+        // ------------------------------------------------------------
+        // Plotting the surfaces..
+        
+        //Plotly.addTraces('myDiv', {x:5,y:5,z:5,mode:'markers',marker: {size: 12,ine: {color: 'rgba(255, 255, 255, 0.14)',width: 0.5},opacity: 0.8},type: 'scatter3d'});
+    </script>
+</body>
+
+</html>
