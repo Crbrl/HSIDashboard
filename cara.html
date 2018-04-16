@@ -1,574 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="utf-8">
-		<title>Bootstrap 3 Admin</title>
-		<meta name="generator" content="Bootply" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link href="css/styles.css" rel="stylesheet">
-	</head>
-	<body>
-<!-- header -->
-<div id="top-nav" class="navbar navbar-inverse navbar-static-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Cara Yanowski Report</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"> Admin <span class="caret"></span></a>
-                    <ul id="g-account-menu" class="dropdown-menu" role="menu">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <title>Bootstrap 3 Admin</title>
+      <meta name="generator" content="Bootply" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <link href="css/styles.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- header -->
+      <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+         <div class="container-fluid">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#">Cara Yanowski Report</a>
+            </div>
+            <div class="navbar-collapse collapse">
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                     <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#"> Admin <span class="caret"></span></a>
+                     <ul id="g-account-menu" class="dropdown-menu" role="menu">
                         <li><a href="#">My Profile</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"> Logout</a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- /container -->
-</div>
-<!-- /Header -->
-
-<!-- Main -->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-3">
+                     </ul>
+                  </li>
+                  <li><a href="#"> Logout</a></li>
+               </ul>
+            </div>
+         </div>
+         <!-- /container -->
+      </div>
+      <!-- /Header -->
+      <!-- Main -->
+      <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-3">
             <!-- Left column -->
             <a href="#"><strong> Information</strong></a>
-
             <hr>
-
             <ul class="nav nav-stacked">
-                <li class="nav-header"> <a href="#" data-toggle="collapse" data-target="#userMenu">General Information </a>
-                    <ul class="nav nav-stacked collapse in" id="userMenu">
-                        <li class="active"> <a href="#">Patient Information</a></li>                       
-                        <li><a href="#"> Clinic Information</a></li>
-                    </ul>
-                </li>               
+               <li class="nav-header">
+                  <a href="#" data-toggle="collapse" data-target="#userMenu">General Information </a>
+                  <ul class="nav nav-stacked collapse in" id="userMenu">
+                     <li class="active"> <a href="#">Patient Information</a></li>
+                     <li><a href="#"> Clinic Information</a></li>
+                  </ul>
+               </li>
             </ul>
-
             <hr>
-
             <a href="#"><strong> Results</strong></a>
-
             <hr>
-
             <ul class="nav nav-pills nav-stacked">
-                <li class="nav-header"></li>
-                <li><a href="#">HSI Algorithm Results</a></li>
-                <li><a href="#"> Decision Plane</a></li>
-                <li><a href="#"> Distance Measure</a></li>
-                <li><a href="#"> Short Tables</a></li>
-                <li><a href="#"> Detailed Tables</a></li>                
-            </ul>                      
-
-            <hr>
-
-            <a href="#"><strong>Disclaimers</strong></a>
-
-            <hr>
-
-            <ul class="nav nav-stacked">
-                <li class="active"><a rel="nofollow" >Results Disclaimers </a></li>
-                <li><a rel="nofollow" >Legal Disclaimesr</a></li>                
+               <li class="nav-header"></li>
+               <li><a href="#">HSI Algorithm Results</a></li>
+               <li><a href="#"> Decision Plane</a></li>
+               <li><a href="#"> Distance Measure</a></li>
+               <li><a href="#"> Short Tables</a></li>
+               <li><a href="#"> Detailed Tables</a></li>
             </ul>
-        </div>
-        <!-- /col-3 -->
-        <div class="col-sm-9">
-
+            <hr>
+            <a href="#"><strong>Disclaimers</strong></a>
+            <hr>
+            <ul class="nav nav-stacked">
+               <li class="active"><a rel="nofollow" >Results Disclaimers </a></li>
+               <li><a rel="nofollow" >Legal Disclaimesr</a></li>
+            </ul>
+         </div>
+         <!-- /col-3 -->
+         <div class="col-sm-9">
             <!-- column 2 -->            
             <a href="#"><strong>Cara Yanowski</strong></a>
-
-            
             <!-- General Information Module -->
             <hr>
             <div class="row">
-                <div class="panel panel-default">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h4>General Information</h4>
+                  </div>
+                  <div class="panel-body">
+                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>General Information</h4></div>
-                        
-                        <div class="panel-body"> 
-                            <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Clinic Information</h4></div>
-                                    <div class="panel-body">                            
-                                        <p>690A Queen Street East Toronto Ontario M4M 1G9</p>
-                                        <p>647-352-5232</p>                            
-                                        <p>info@headachesciences.com</p>  
-                                    </div>
-                                </div>                           
-                            <div class="col-md-6">        
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Referal From</h4></div>
-                                    <div class="panel-body">
-                                        <p>Doctor Name: Dr.Walker</p>
-                                        <p>Office Address:123 Random Street Toronton Ontario A1B 2C3</p>
-                                        <p>Office Tel:647-111-2222</p>                            
-                                        <p>Email:patientEmail@mail.com</p>                            
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <div class="panel-title">                                
-                                            <h4>Referring Doctor Notes</h4>
-                                        </div>
-                                    </div>
-                                    <div class="panel-body">
-                                        <form class="form form-vertical">
-                                            <div class="control-group">
-                                                <label>Name</label>
-                                                <div class="controls">
-                                                    <input type="text" class="form-control" placeholder="Enter Name">
-                                                </div>
-                                            </div>
-                                            <div class="control-group">
-                                                <label>Message</label>
-                                                <div class="controls">
-                                                    <textarea class="form-control"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="control-group">
-                                                <label>Diagnosis</label>
-                                                <div class="controls">
-                                                    <select class="form-control">
-                                                        <option>options</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="control-group">
-                                                <label></label>
-                                                <div class="controls">
-                                                    <button type="submit" class="btn btn-primary">
-                                                        Post
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                    <!--/panel content-->
-                                </div>
-                            </div> 
-
-                            <div class="col-md-6">        
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Patient Personal Information</h4></div>
-                                    <div class="panel-body">
-                                        <p>Identifying ID:h8eA36T1</p>
-                                        <p>Address: 18 Delavan Ave</p>
-                                        <p>Tel: 416-489-8238</p>                            
-                                        <p>Email:yanowskic@gmail.com</p>
-                                        <p>Sex: Female</p>                            
-                                        <p>Date of Birth: 07/08/1990</p>
-                                        <p>Age at Recording Time:27</p>
-                                        <p>Medication:Cipralex(20 mg) and Zolmitriptan</p>
-                                        <p>Cranial Observations:No</p>                                        
-                                    </div>
-                                </div>
-                            </div>
+                           <h4>Clinic Information</h4>
                         </div>
-                    </div>
+                        <div class="panel-body">
+                           <p>690A Queen Street East Toronto Ontario M4M 1G9</p>
+                           <p>647-352-5232</p>
+                           <p>info@headachesciences.com</p>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4>Referal From</h4>
+                           </div>
+                           <div class="panel-body">
+                              <p>Doctor Name: Dr.Walker</p>
+                              <p>Office Address:123 Random Street Toronton Ontario A1B 2C3</p>
+                              <p>Office Tel:647-111-2222</p>
+                              <p>Email:patientEmail@mail.com</p>
+                           </div>
+                        </div>
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <div class="panel-title">
+                                 <h4>Referring Doctor Notes</h4>
+                              </div>
+                           </div>
+                           <div class="panel-body">
+                              <form class="form form-vertical">
+                                 <div class="control-group">
+                                    <label>Name</label>
+                                    <div class="controls">
+                                       <input type="text" class="form-control" placeholder="Enter Name">
+                                    </div>
+                                 </div>
+                                 <div class="control-group">
+                                    <label>Message</label>
+                                    <div class="controls">
+                                       <textarea class="form-control"></textarea>
+                                    </div>
+                                 </div>
+                                 <div class="control-group">
+                                    <label>Diagnosis</label>
+                                    <div class="controls">
+                                       <select class="form-control">
+                                          <option>options</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                                 <div class="control-group">
+                                    <label></label>
+                                    <div class="controls">
+                                       <button type="submit" class="btn btn-primary">
+                                       Post
+                                       </button>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                           <!--/panel content-->
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="panel panel-default">
+                           <div class="panel-heading">
+                              <h4>Patient Personal Information</h4>
+                           </div>
+                           <div class="panel-body">
+                              <p>Identifying ID:h8eA36T1</p>
+                              <p>Address: 18 Delavan Ave</p>
+                              <p>Tel: 416-489-8238</p>
+                              <p>Email:yanowskic@gmail.com</p>
+                              <p>Sex: Female</p>
+                              <p>Date of Birth: 07/08/1990</p>
+                              <p>Age at Recording Time:27</p>
+                              <p>Medication:Cipralex(20 mg) and Zolmitriptan</p>
+                              <p>Cranial Observations:No</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
             <!-- Recodring Module -->
             <hr>
             <div class="row">
-                <div class="panel panel-default">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h4>Recording Information</h4>
+                  </div>
+                  <div class="panel-body">
+                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Recording Information</h4></div>
-                        
-                        <div class="panel-body"> 
-                            <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Recording Information</h4></div>
-                                    <div class="panel-body">                            
-                                         <table class="table table-striped">                                        
-                                        <tbody> 
-                                            <tr>                                           
-                                                <th>Purpose for EEG Recording</th>
-                                                <td>Migraine Diagnosis</td>
-                                            </tr>
-                                            <tr>
-                                                <th>Recording Date</th>
-                                                <td>04-06-2018</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Recording Duration</th>
-                                                <td>10 minutes</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Report Date</th>
-                                                <td>04-12-2018</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Recording Technician</th>
-                                                <td>Mario Garingo and Dr.Sayed Zaki</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Software Used</th>
-                                                <td>DECI Software</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Amplifier</th>
-                                                <td>REFA 32</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Electrode Type</th>
-                                                <td>Sintered Ring Electrodes</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Number of Electrodes</th>
-                                                <td>32</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Montage</th>
-                                                <td>10/20 Rule</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Patient Condition</th>
-                                                <td>Wakefulness</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Baseline</th>
-                                                <td>Eyes Closed and Eyes Open</td>                                                
-                                            </tr>
-                                            <tr>
-                                                <th>Stimulation</th>
-                                                <td>60W Lightbulb</td>                                                
-                                            </tr>
-                                              <tr>
-                                                <th>Post-Processing</th>
-                                                <td>1)Filtered at 0.1-56Hz; 2)display 30sec fo EEG for each epoch; 3)60Hz notch filter for removal of powerline interference</td>                                                
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-                                    </div>
-                                </div> 
-
-                                <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>Patient EEG</h4></div>
-                                    <div class="panel-body">                            
-                                        <img src="img/h8eA36T1.JPG" width="100%">
-                                    </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>EEG Descriptions</h4></div>
-                                    <div class="panel-body"> 
-                                        <p>Neurologists should highlight the following</p>
-                                        <ul>
-                                            <li>Dominant activity</li>
-                                            <li>Symmetric or asymmetric between hemispheres</li>
-                                            <li>Regular or irregular</li>
-                                            <li>Amplitude (voltages) of low, medium/moderate and high</li>
-                                            <li>Continuous/discontinuous</li>
-                                            <li>Predominant waveforms</li>
-                                            <li>Predominant voltages</li>
-                                        </ul>
-                                        
-                                        <p>An example can be: The background activity during waking state consists of well regulated medium (low to high) amplitude alpha activity at 10 Hz in the posterior head regions attenuated with eyes opening intermingled with low amplitude beta activity in the anterior head regions.</p>
-                                    </div>
-                            </div>
-                                                      
-                            
-
-                           
+                           <h4>Recording Information</h4>
                         </div>
-                    </div>
+                        <div class="panel-body">
+                           <table class="table table-striped">
+                              <tbody>
+                                 <tr>
+                                    <th>Purpose for EEG Recording</th>
+                                    <td>Migraine Diagnosis</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Recording Date</th>
+                                    <td>04-06-2018</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Recording Duration</th>
+                                    <td>10 minutes</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Report Date</th>
+                                    <td>04-12-2018</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Recording Technician</th>
+                                    <td>Mario Garingo and Dr.Sayed Zaki</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Software Used</th>
+                                    <td>DECI Software</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Amplifier</th>
+                                    <td>REFA 32</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Electrode Type</th>
+                                    <td>Sintered Ring Electrodes</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Number of Electrodes</th>
+                                    <td>32</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Montage</th>
+                                    <td>10/20 Rule</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Patient Condition</th>
+                                    <td>Wakefulness</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Baseline</th>
+                                    <td>Eyes Closed and Eyes Open</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Stimulation</th>
+                                    <td>60W Lightbulb</td>
+                                 </tr>
+                                 <tr>
+                                    <th>Post-Processing</th>
+                                    <td>1)Filtered at 0.1-56Hz; 2)display 30sec fo EEG for each epoch; 3)60Hz notch filter for removal of powerline interference</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4>Patient EEG</h4>
+                        </div>
+                        <div class="panel-body">                            
+                           <img src="img/h8eA36T1.JPG" width="100%">
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4>EEG Descriptions</h4>
+                        </div>
+                        <div class="panel-body">
+                           <p>To be filled out by Dr.Zaki</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-
             <hr>
             <!-- Results Module -->
             <div class="row">
-                <div class="panel panel-default">
+               <div class="panel panel-default">
+                  <div class="panel-heading">
+                     <h4>Results</h4>
+                  </div>
+                  <div class="panel-body">
+                     <!-- Entire Row-->
+                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Results</h4></div>
-                        <div class="panel-body">  
-                            <!-- Entire Row-->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>Findings</h4></div>
-                                    <div class="panel-body">
-                                        <p>The background activity during waking state consists of well regulated medium (low to high) amplitude alpha activity at 10 Hz in the posterior head regions attenuated with eyes opening intermingled with low amplitude beta activity in the anterior head regions.</p>
-                                    </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>Indications</h4></div>
-                                    <div class="panel-body">                            
-                                         <p>This is a multichannel digital EEG recording using the international 10-20 placement system. The resting record is poorly organized but symmetric. A dominant posterior rhythm is seen but is poorly sustained. When present, it consists of a 10 hertz, 20 to 50 microvolt alpha rhythm. This attenuates with eye opening. During drowsiness, there is mild attenuation and slowing of the background rhythm. Stage II sleep was not achieved. Hyperventilation was not performed. Photic stimulation did not significantly alter the background rhythm. Prominent muscle artifact and movement artifact as well as electrode artifact was noted during this recording. There was noted also a single sharp left temporoparietal discharge.</p>
-                                    </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>Impression</h4></div>
-                                    <div class="panel-body">                            
-                                         <p>Probably abnormal awake and sleep EEG for age due to brief runs of right frontal, sharply contoured delta activity. Sometimes, these frontal delta waves were maximal over the left frontal region, but more commonly over the right. Finally, occasional, irregular generalized spike-and-wave discharges or sharp and slow wave-like discharges were seen.</p>
-                                    </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>HSI Test Output</h4></div>
-                                    <div class="panel-body">                            
-                                         <p>Your patient Jenny Doe was recorded for eeg on 01/01/2018. Signal processing was conducted using and your patient tested positive.  This means that they were compared to the current database of headache sciences and found to have a 93% chance of being a migraine sufferer.</p>
-
-                                         <p>Your patient Jenny Doe was recorded for eeg on 01/01/2018. Signal processing was conducted using and your patient tested positive.  This means that they were compared to the current database of headache sciences and found to have a 93% chance of not having a migraine sufferer.</p>
-
-                                         <p>
-                                          Your patient Jenny Doe was recorded for eeg on 01/01/2018. Signal processing was conducted using and your patient tested equivocal. The decision plane diagram is the cube shaped 3D graphic that is used to display results from  the signal analysis of a combination of normal controls and patients.  Or it could be used whereby there is only one dot for a single patient of interest as in a test report.  Within the decision plane diagram there is a decision plane which is in the shape of a sheet that is darkly shaded.  Subjects that are below this sheet but not very close to it are normal in terms of our electrical findings.  Subjects that are above this sheet but not very close to it are abnormal.  The sheets/decision plane is associated with a degree of variance such as +-5%. 
-                                         </p>
-                                    </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>Clinical Correlation</h4></div>
-                                    <div class="panel-body">                            
-                                         <p> The EEG was difficult to interpret, but the features obtained are considered to be probably abnormal based on the clinical literature. They could be consistent with a clinical headache. </p>
-                                    </div>
-                            </div>
-
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h4>Detailed Report By Neurologist</h4></div>
-                                    <div class="panel-body">                            
-                                         <p>This where where the opinion of our neurolgist will go.</p>
-                                         <p>During the resting state on a non headache day your patient had a number of electrical frequency changes which differ from our normal controls and were similar to our migraine research group. The most notable ones were….</p>
-                                         <p>Your patient was also found to have a number of irregulatrites of short electrial events known as “transients”. These were….</p>
-                                         <p>Here is a 3D image make with a program called SPECTRE which shows high Z score areass for what is called mean current density over an epoch. The cooured regions are those that were more than 2 standard deviations awave from the mean for our normal control group. They offer some insight into where in teh brain you patient differed from the normal control group.</p>
-                                         <p>Description of EEG findings:</p>
-                                         <p>Clinical Correlation</p>
-                                         <p>Impressions:</p>
-                                         <p>Further Study</p>
-                                         <p>EXAMPLE:</p>
-                                            <p>The quality of the recording was poor/fair/good/excelent.  The following difficulting were encountered during the recording. Patient was anxious/moving/tired/thick hair/.  The following physiological artifacts were present the following non physiological artifacts were present.  For a list see Dr.Doidges sleep atlas.  Under the recommendation section, repeat test in x months to access the effective treatement x.  Under impressions put for the electrical severity measure this is based on the distance from the decision plane. Mild/moderate/severe.</p>
-                                    </div>
-                            </div>
-
-
-                            <!-- Left Side of Results -->                          
-                            <div class="col-md-6">        
-                                <div class="panel panel-default">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4>Decision Plane Diagram</h4></div>
-                                        <div class="panel-body">                            
-                                            <img src="decisionPlane.jpg" width="100%">
-                                        </div>
-                                    </div>    
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Short Feature Summary</h4></div>
-                                    <div class="panel-body">                            
-                                         <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Features</th>
-                                                <th>Percentage</th>
-                                                <th>Area of Interest</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Alpha Phase</td>
-                                                <td>25%</td>
-                                                <td>Parietal</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wavelet</td>
-                                                <td>56%</td>
-                                                <td>Frontal</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AR</td>
-                                                <td>72%</td>
-                                                <td>Occipital</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>..</td>
-                                                <td>..</td>
-                                                <td>..</td>
-                                            </tr>
-                                            <tr>
-                                                <td>..</td>
-                                                <td>..</td>
-                                                <td>..</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    </div>
-                                </div>  
-                            </div> 
-
-                            <!-- Right Side of Results -->
-                            <div class="col-md-6">        
-                                <div class="panel panel-default">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4>Severity Measure</h4></div>
-                                        <div class="panel-body">
-                                            <img src="img/colourBar.png" width="100%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <h4>Movies</h4></div>
-                                        <div class="panel-body">
-                                            <img src="img/CaraToPrint.jpg" width="100%">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Long Feature Summary</h4></div>
-                                    <div class="panel-body">                            
-                                         <div class="table-responsive">
-                                    <table class="table table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>Features</th>
-                                                <th>Percentage</th>
-                                                <th>Area of Interest</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Alpha Phase</td>
-                                                <td>25%</td>
-                                                <td>Parietal</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Wavelet</td>
-                                                <td>56%</td>
-                                                <td>Frontal</td>
-                                            </tr>
-                                            <tr>
-                                                <td>AR</td>
-                                                <td>72%</td>
-                                                <td>Occipital</td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <td>..</td>
-                                                <td>..</td>
-                                                <td>..</td>
-                                            </tr>
-                                            <tr>
-                                                <td>..</td>
-                                                <td>..</td>
-                                                <td>..</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                    </div>
-                                </div>  
-                            </div> 
+                           <h4>Findings</h4>
                         </div>
-                    </div>
-            </div>
-
-            <hr>
-            <!-- Disclaimer Module -->
-            <div class="row">
-                <div class="panel panel-default">
+                        <div class="panel-body">
+                           <p>To be filled out by Dr.Zaki</p>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4>Disclaimer</h4></div>
-                        <div class="panel-body">                            
-                            <div class="col-md-6">        
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Results Disclaimer</h4></div>
-                                    <div class="panel-body">                            
-                                        <p>Your patient was tested on a day that they agreed was not a migraine headache day.  This is a test to determine the probability is a migraine sufferer.  To read the companies disclaimer click here.  For a peer-reviewed conference paper the research leading up to this test click here.  To contact the chief technology officer for scientific questions click here.  For the confidentiality policy and procedures click here.  For frequently asked questions from referring doctors click here.  For an explanation of the decision plane to divide patients from controls including your patient click here. </p> 
-                                        <p> For a glossary of commonly used  scientific concepts that are applicable to the generation of this report. Click here.</p>                            
-                                    </div>
-                                </div>
-                            </div> 
-
-                            <div class="col-md-6">        
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4>Legal Disclaimer</h4></div>
-                                    <div class="panel-body">                            
-                                        <p>We make no claims at this point to say if the patient does or does not have ___ headache. 
-                                        They were screen carefully through ICHD.  We also took additional precautions to ensure they have migraine by having the patients fill out additional questionnaires. Physical examinations were not done. </p>
-
-                                        <p>Refer to the paper to see accuracy, specificity and accuracy. </p>
-
-                                        <p>Further validation studies may further improve the validity of our initial pilot findings, such studies can include 1) expanding the sample group of the study 2) independent studies done as the same way as ours. </p>
-
-                                        <p>The sensitivity and specificity of our test is closely tied to the IHS criteria and our impression is that the IHS criteria is accurate in the following situations. Patient is truthful, no significant language barrier, IHS questions are applied with in depth dialogue with a highly skilled interviewer and answers to the questionnaire questions are not blindly accepted.  The interviewer is given an interview form with long check lists for each of the stages of migraine which can be used by the interviewer to gain further clarity when the IHS criteria are a little unclear. </p>
-
-                                        <p>There are theoretical consideration when headaches are clinically very different from each other in our opinion it is quite unlikely that the electrical signatures/ electrical bio-markers will be the same as they are from migraine.</p>
-
-                                        <p>We do not recommend that our test be used  as a soul basis for diagnosis we recommend that they be seen by a skilled in headache diagnosis and that they take into consideration the patient history, physical, credibility, diagnostic barriers and any other relevant neurological lab test on file when forming their diagnostic opinion.
-                                        </p>                                        
-                                    </div>
-                                </div>
-                            </div> 
+                           <h4>Indications</h4>
                         </div>
-                    </div>
+                        <div class="panel-body">
+                           <p>To be filled out by Dr.Zaki and Dr.Doidge</p>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4>Impression</h4>
+                        </div>
+                        <div class="panel-body">
+                           <p>To be filled out by Dr.Zaki and Dr.Doidge</p>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4>HSI Test Output</h4>
+                        </div>
+                        <div class="panel-body">
+                           <p>
+                              Your patient Cara Yanowski was recorded for eeg on 01/01/2018. Signal processing was conducted using and your patient tested equivocal. The decision plane diagram is the cube shaped 3D graphic that is used to display results from  the signal analysis of a combination of normal controls and patients.  Or it could be used whereby there is only one dot for a single patient of interest as in a test report.  Within the decision plane diagram there is a decision plane which is in the shape of a sheet that is darkly shaded.  Subjects that are below this sheet but not very close to it are normal in terms of our electrical findings.  Subjects that are above this sheet but not very close to it are abnormal.  The sheets/decision plane is associated with a degree of variance such as +-5%. 
+                           </p>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4>Clinical Correlation</h4>
+                        </div>
+                        <div class="panel-body">
+                           <p>To be filled out by Dr.Zaki and Dr.Doidge</p>
+                        </div>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="panel-heading">
+                           <h4>Detailed Report By Neurologist</h4>
+                        </div>
+                        <div class="panel-body">
+                           <p>To be filled out by Dr.Zaki and Dr.Doidge</p>
+                        </div>
+                        <!-- Left Side of Results -->                          
+                        <div class="col-md-6">
+                           <div class="panel panel-default">
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4>Decision Plane Diagram</h4>
+                                 </div>
+                                 <div class="panel-body">                            
+                                    <img src="img/FeatureSpaceGraph .png" width="100%">
+                                 </div>
+                              </div>
+                           </div>
+                           <!--
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4>Short Feature Summary</h4>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="table-responsive">
+                                    <table class="table table-striped">
+                                       <thead>
+                                          <tr>
+                                             <th>Features</th>
+                                             <th>Percentage</th>
+                                             <th>Area of Interest</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>Alpha Phase</td>
+                                             <td>25%</td>
+                                             <td>Parietal</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Wavelet</td>
+                                             <td>56%</td>
+                                             <td>Frontal</td>
+                                          </tr>
+                                          <tr>
+                                             <td>AR</td>
+                                             <td>72%</td>
+                                             <td>Occipital</td>
+                                          </tr>
+                                          <tr>
+                                             <td>..</td>
+                                             <td>..</td>
+                                             <td>..</td>
+                                          </tr>
+                                          <tr>
+                                             <td>..</td>
+                                             <td>..</td>
+                                             <td>..</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                           -->
+                        </div>
+                        <!-- Right Side of Results -->
+                        <div class="col-md-6">
+                           <div class="panel panel-default">
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4>Severity Measure OR Deviation Index</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <img src="img/colourBarCara.png" width="100%">
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="panel panel-default">
+                              <div class="panel panel-default">
+                                 <div class="panel-heading">
+                                    <h4>Movies</h4>
+                                 </div>
+                                 <div class="panel-body">
+                                    <img src="img/CaraToPrint.jpg" width="100%">
+                                 </div>
+                              </div>
+                           </div>
+                           <!--
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4>Long Feature Summary</h4>
+                              </div>
+                              <div class="panel-body">
+                                 <div class="table-responsive">
+                                    <table class="table table-striped">
+                                       <thead>
+                                          <tr>
+                                             <th>Features</th>
+                                             <th>Percentage</th>
+                                             <th>Area of Interest</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td>Alpha Phase</td>
+                                             <td>25%</td>
+                                             <td>Parietal</td>
+                                          </tr>
+                                          <tr>
+                                             <td>Wavelet</td>
+                                             <td>56%</td>
+                                             <td>Frontal</td>
+                                          </tr>
+                                          <tr>
+                                             <td>AR</td>
+                                             <td>72%</td>
+                                             <td>Occipital</td>
+                                          </tr>
+                                          <tr>
+                                             <td>..</td>
+                                             <td>..</td>
+                                             <td>..</td>
+                                          </tr>
+                                          <tr>
+                                             <td>..</td>
+                                             <td>..</td>
+                                             <td>..</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </div>
+                            -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <hr>
+               <!-- Disclaimer Module -->
+               <div class="row">
+                  <div class="panel panel-default">
+                     <div class="panel-heading">
+                        <h4>Disclaimer</h4>
+                     </div>
+                     <div class="panel-body">
+                        <div class="col-md-6">
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4>Results Disclaimer</h4>
+                              </div>
+                              <div class="panel-body">
+                                 <p>Your patient was tested on a day that they agreed was not a migraine headache day.  This is a test to determine the probability is a migraine sufferer.  To read the companies disclaimer click here.  For a peer-reviewed conference paper the research leading up to this test click here.  To contact the chief technology officer for scientific questions click here.  For the confidentiality policy and procedures click here.  For frequently asked questions from referring doctors click here.  For an explanation of the decision plane to divide patients from controls including your patient click here. </p>
+                                 <p> For a glossary of commonly used  scientific concepts that are applicable to the generation of this report. Click here.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="panel panel-default">
+                              <div class="panel-heading">
+                                 <h4>Legal Disclaimer</h4>
+                              </div>
+                              <div class="panel-body">
+                                 <p>We make no claims at this point to say if the patient does or does not have ___ headache. 
+                                    They were screen carefully through ICHD.  We also took additional precautions to ensure they have migraine by having the patients fill out additional questionnaires. Physical examinations were not done. 
+                                 </p>
+                                 <p>Refer to the paper to see accuracy, specificity and accuracy. </p>
+                                 <p>Further validation studies may further improve the validity of our initial pilot findings, such studies can include 1) expanding the sample group of the study 2) independent studies done as the same way as ours. </p>
+                                 <p>The sensitivity and specificity of our test is closely tied to the IHS criteria and our impression is that the IHS criteria is accurate in the following situations. Patient is truthful, no significant language barrier, IHS questions are applied with in depth dialogue with a highly skilled interviewer and answers to the questionnaire questions are not blindly accepted.  The interviewer is given an interview form with long check lists for each of the stages of migraine which can be used by the interviewer to gain further clarity when the IHS criteria are a little unclear. </p>
+                                 <p>There are theoretical consideration when headaches are clinically very different from each other in our opinion it is quite unlikely that the electrical signatures/ electrical bio-markers will be the same as they are from migraine.</p>
+                                 <p>We do not recommend that our test be used  as a soul basis for diagnosis we recommend that they be seen by a skilled in headache diagnosis and that they take into consideration the patient history, physical, credibility, diagnostic barriers and any other relevant neurological lab test on file when forming their diagnostic opinion.
+                                 </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-            
-        </div>
-        <!--/col-span-9-->
-    </div>
-</div>
-<!-- /Main -->
-
-<footer class="text-center">MARIO TEMPLATE</footer>
-
-<div class="modal" id="addWidgetModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title">Add Widget</h4>
+            <!--/col-span-9-->
+         </div>
+      </div>
+      <!-- /Main -->
+      <footer class="text-center">HSI TEMP REPORT</footer>
+      <div class="modal" id="addWidgetModal">
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                  <h4 class="modal-title">Add Widget</h4>
+               </div>
+               <div class="modal-body">
+                  <p>Add a widget stuff here..</p>
+               </div>
+               <div class="modal-footer">
+                  <a href="#" data-dismiss="modal" class="btn">Close</a>
+                  <a href="#" class="btn btn-primary">Save changes</a>
+               </div>
             </div>
-            <div class="modal-body">
-                <p>Add a widget stuff here..</p>
-            </div>
-            <div class="modal-footer">
-                <a href="#" data-dismiss="modal" class="btn">Close</a>
-                <a href="#" class="btn btn-primary">Save changes</a>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dalog -->
-</div>
-<!-- /.modal -->
-	<!-- script references -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/scripts.js"></script>
-	</body>
+            <!-- /.modal-content -->
+         </div>
+         <!-- /.modal-dalog -->
+      </div>
+      <!-- /.modal -->
+      <!-- script references -->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+   </body>
 </html>
