@@ -88,6 +88,8 @@
 
     var xxPoints = [];
     var yyPoints = [];
+    var xxMatrix = [];
+    var yyMatrix = [];
 
     for (i = 0; i < numIncrements; i++) { 
       xxPoints.push(xxMin+(xxIncrements*i));
@@ -108,9 +110,11 @@
         zzPointsRow.push(currentValue);
       }
       zzPoints.push(zzPointsRow);
+      xxMatrix.push(xxPoints);
+      yyMatrix.push(yyPoints);
     }
     
-    var decisionPlane = {z: zzPoints, 
+    var decisionPlane = {z: zzPoints,x:xxMatrix,y:yyMatrix,
       type: 'surface',
       showlegend: true,
       name: decisionPlane,
@@ -121,9 +125,12 @@
         [1, 'rgb(119,136,153)']
     ]
     };    
+
+    var dataPlane = [];
+    dataPlane.push(decisionPlane);
     
     //Plotly.newPlot('myDiv', [data_z1]);
-    Plotly.addTraces('myDiv', decisionPlane);
+    Plotly.addTraces('myDiv', dataPlane);
     </script>
 </body>
 

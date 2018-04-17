@@ -38,11 +38,11 @@
     var yyMax = 1;
     var numIncrements = 50;
 
-    xxMin = xxMin-0.5;
-    xxMax = xxMax+0.5;
+    xxMin = xxMin-0.1;
+    xxMax = xxMax;
 
-    yyMin = yyMin-0.5;
-    yyMax = yyMax+0.5;
+    yyMin = yyMin-0.1;
+    yyMax = yyMax;
 
 
     var xxIncrements = (xxMax-xxMin)/numIncrements;
@@ -50,6 +50,8 @@
 
     var xxPoints = [];
     var yyPoints = [];
+    var xxMatrix = [];
+    var yyMatrix = [];
 
     for (i = 0; i < numIncrements; i++) { 
       xxPoints.push(xxMin+(xxIncrements*i));
@@ -70,22 +72,47 @@
         zzPointsRow.push(currentValue);
       }
       zzPoints.push(zzPointsRow);
+      xxMatrix.push(xxPoints);
+      yyMatrix.push(yyPoints);
     }
+
+    // Normalize zzPoints 
     
-    var decisionPlane = {z: zzPoints, 
+    var decisionPlane = {z: zzPoints, x:xxMatrix,y:yyMatrix,
       type: 'surface',
       showlegend: true,
       name: decisionPlane,
-      showscale: false,
+      showscale: false,      
       colorscale: [
         [0, 'rgb(119,136,153)'],
         [0.5, 'rgb(119,136,153)'],
         [1, 'rgb(119,136,153)']
     ]
     };    
+
+    var layout = {
+      xaxis: {
+        autotick: false,
+        ticks: 'outside',
+        tick0: xxMin,
+        dtick: xxIncrements,
+        ticklen: xxMax
+      },
+      yaxis: {
+        autotick: false,
+        ticks: 'outside',
+        tick0: yyMin,
+        dtick: yyIncrements,
+        ticklen: yyMax
+      },
+      zaxis: {
+        autotick: true        
+      }
+    };
+    
     
     //Plotly.newPlot('myDiv', [data_z1]);
-    Plotly.newPlot('myDiv', [decisionPlane]);
+    Plotly.newPlot('myDiv', [decisionPlane],layout);
     </script>
 </body>
 
