@@ -105,13 +105,17 @@
     var currentValue = [];
     for (yInd = 0; yInd < numIncrements; yInd++) { 
       var zzPointsRow = [];
+      var xxPointsRow = [];
+      var yyPointsRow = [];
       for (xInd = 0; xInd < numIncrements; xInd++) { 
         currentValue = (-w1*xxPoints[xInd]-w2*yyPoints[yInd]+yIntercept)/w3;
         zzPointsRow.push(currentValue);
+        xxPointsRow.push(xInd);
+        yyPointsRow.push(yInd);
       }
       zzPoints.push(zzPointsRow);
-      xxMatrix.push(xxPoints);
-      yyMatrix.push(yyPoints);
+      xxMatrix.push(xxPointsRow);
+      yyMatrix.push(yyPointsRow);
     }
     
     var decisionPlane = {z: zzPoints,x:xxMatrix,y:yyMatrix,
