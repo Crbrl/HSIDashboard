@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <!-- Plotly.js -->
+    <!-- Plotly.js -->    
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 </head>
@@ -10,6 +10,8 @@
     <!-- Plotly chart will be drawn inside this DIV -->
     <div id="myDiv" style="width:1000px; height:1000px;"></div>
     <script>
+        // https://crbrl.github.io/HSIDashboard/testingGraph/plottingInteractiveDecisionPlaneDiagram.html
+
         // initial data..      http://headachesciences.com/Documentations/data/matlabFeatMatrixReducedNormalized.csv
         //   https://raw.githubusercontent.com/plotly/datasets/master/3d-scatter.csv
         // https://drive.google.com/file/d/1V9yksZbbF98fdvSYzfTTBiCld8uMmNM1/view?usp=sharing
@@ -121,7 +123,7 @@
     };    
     
     //Plotly.newPlot('myDiv', [data_z1]);
-    Plotly.addTraces('myDiv', [decisionPlane]);
+    Plotly.addTraces('myDiv', decisionPlane);
     </script>
 </body>
 
