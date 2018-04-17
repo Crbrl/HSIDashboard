@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <!-- Plotly.js -->
+    <!-- https://crbrl.github.io/HSIDashboard/testingGraph/plotting3DScatterPlotlyPlot.html -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Plotly chart will be drawn inside this DIV -->
+    <div id="myDiv" style="width:1000px; height:1000px;"></div>
+    <script>
+        z1 = [
+        [8.83,8.89,8.81,8.87,8.9,8.87],
+        [8.89,8.94,8.85,8.94,8.96,8.92],
+        [8.84,8.9,8.82,8.92,8.93,8.91],
+        [8.79,8.85,8.79,8.9,8.94,8.92],
+        [8.79,8.88,8.81,8.9,8.95,8.92],
+        [8.8,8.82,8.78,8.91,8.94,8.92],
+        [8.75,8.78,8.77,8.91,8.95,8.92],
+        [8.8,8.8,8.77,8.91,8.95,8.94],
+        [8.74,8.81,8.76,8.93,8.98,8.99],
+        [8.89,8.99,8.92,9.1,9.13,9.11],
+        [8.97,8.97,8.91,9.09,9.11,9.11],
+        [9.04,9.08,9.05,9.25,9.28,9.27],
+        [9,9.01,9,9.2,9.23,9.2],
+        [8.99,8.99,8.98,9.18,9.2,9.19],
+        [8.93,8.97,8.97,9.18,9.2,9.18]
+    ];    
+    var data_z1 = {z: z1, type: 'surface'};
+
+    // ----------------------------------  Generate ranges for the axis --------------------------------
+    var xxMin = 0.13941556499999999;
+    var xxMax = 1;
+
+    var yyMin = 0.085665704999999995;
+    var yyMax = 1;
+    var numIncrements = 50;
+
+    xxMin = xxMin-0.5;
+    xxMax = xxMax+0.5;
+
+    yyMin = yyMin-0.5;
+    yyMax = yyMax+0.5;
+
+
+    var xxIncrements = (xxMax-xxMin)/numIncrements;
+    var yyIncrements = (yyMax-yyMin)/numIncrements;
+
+    var xxPoints = [];
+    var yyPoints = [];
+
+    for (i = 0; i < numIncrements; i++) { 
+      xxPoints.push(xxMin+(xxIncrements*i));
+      yyPoints.push(yyMin+(yyIncrements*i));
+    }
+
+    var w1 = 0.29434643582248704;
+    var w2 = -0.82132557656481664;
+    var w3 = -1.5362053665267839;
+    var yIntercept = -0.50168999;
+
+    var zzPoints = [];
+    var currentValue = [];
+    for (yInd = 0; yInd < numIncrements; yInd++) { 
+      var zzPointsRow = [];
+      for (xInd = 0; xInd < numIncrements; xInd++) { 
+        currentValue = (-w1*xxPoints[xInd]-w2*yyPoints[yInd]+yIntercept)/w3;
+        zzPointsRow.push(currentValue);
+      }
+      zzPoints.push(zzPointsRow);
+    }
+    
+    var decisionPlane = {z: zzPoints, 
+      type: 'surface',
+      colorscale: [
+        [0, 'rgb(255, 0, 0)'],
+        [0.5, 'rgb(255, 0, 0)'],
+        [1, 'rgb(255, 0, 0)']
+    ]
+    };    
+    
+    //Plotly.newPlot('myDiv', [data_z1]);
+    Plotly.newPlot('myDiv', [decisionPlane]);
+    </script>
+</body>
+
+</html>
