@@ -110,8 +110,8 @@
       for (xInd = 0; xInd < numIncrements; xInd++) { 
         currentValue = (-w1*xxPoints[xInd]-w2*yyPoints[yInd]+yIntercept)/w3;
         zzPointsRow.push(currentValue);
-        xxPointsRow.push(xInd);
-        yyPointsRow.push(yInd);
+        xxPointsRow.push(xxPoints[xInd]);
+        yyPointsRow.push(yyPoints[yInd]);
       }
       zzPoints.push(zzPointsRow);
       xxMatrix.push(xxPointsRow);
