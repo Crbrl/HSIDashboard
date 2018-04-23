@@ -1,17 +1,4 @@
-<html>
-
-<head>
-    <!-- Plotly.js -->
-    <!-- https://crbrl.github.io/HSIDashboard/testingGraph/plotting3DScatterPlotlyPlot.html -->
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-
-</head>
-
-<body>
-    <!-- Plotly chart will be drawn inside this DIV -->
-    <div id="myDiv" style="width:1000px; height:1000px;"></div>
-    <script>        
-    // ----------------------------------  Generate ranges for the axis --------------------------------
+// ----------------------------------  Generate ranges for the axis --------------------------------
     var xxMin = 0.13941556499999999;
     var xxMax = 1;
 
@@ -104,14 +91,10 @@
         xaxis:{title: 'Alpha Phase Synchronization'},
         yaxis:{title: 'Wavelet'},
         zaxis:{title: 'AR Statistics'},
-        },      
-      margin: {
-       l: 0,
-       r: 0,
-       b: 50,
-       t: 50,
-       pad: 4
-      },
+        },
+        autosize: false,
+        width: 1000,
+        height: 800,
     }
 
     
@@ -132,7 +115,7 @@
           x:xM,  y:yM, z:zM, 
           mode: 'markers',
           marker: {
-            size: 12,
+            size: 5,
             line: {
               color: 'rgba(217, 0, 0, 0.14)',
               width: 0.1
@@ -147,7 +130,7 @@
       x:xNC,  y:yNC, z:zNC, 
       mode: 'markers',
       marker: {
-        size: 12,
+        size: 5,
         line: {
           color: 'rgba(0, 217, 0, 0.14)',
           width: 0.1
@@ -176,7 +159,3 @@
     var data = [traceM,traceNC,tracePatient];   
     
     Plotly.addTraces('myDiv', data);
-    </script>
-</body>
-
-</html>
